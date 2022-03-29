@@ -149,3 +149,19 @@ export default class Childpp extends LightningElement {
     }
 }
 ----------------------------------------------------------------------------------
+
+Channel Code
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>myChanneldemo</masterLabel>
+    <isExposed>true</isExposed>
+    <description>Message Channel to pass a entity Id</description>
+    <lightningMessageFields>
+        <fieldName>myText</fieldName>
+        <description>Used For parent To child</description>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>myText1</fieldName>
+        <description>Used for child to parent</description>
+    </lightningMessageFields>
+</LightningMessageChannel>
